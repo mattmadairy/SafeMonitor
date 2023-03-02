@@ -1,0 +1,8 @@
+#SafeMonitor install script
+
+git config --global user.name "Matthew Madairy"
+git config --global user.email "mattmadairy@email.com"
+sudo git clone https://github.com/mattmadairy/SafeMonitor.git
+git config --global --add safe.directory /home/pi/SafeMonitor
+git config --global --unset https.proxy
+git config --global pull.rebase false 
