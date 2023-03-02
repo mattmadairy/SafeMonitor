@@ -11,6 +11,7 @@ blue = LED(12)
 def reboot():   
     logging(event)
     pushOver(rebootMes)
+    green.off()
     blue.blink(on_time=0.2, off_time=0.2, n=3)
     check_call(['sudo', 'reboot'])
     
