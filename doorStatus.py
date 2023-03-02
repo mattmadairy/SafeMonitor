@@ -20,7 +20,8 @@ def doorOpened(): ### wait for press
     green.off()
     red.on()
     sleep(5) ### change to 30 or 60 after dev complete
-    pushOver(openMessage)
+    if door.is_pressed:
+        pushOver(openMessage)
 
     while door.is_pressed:
         door_open = True
