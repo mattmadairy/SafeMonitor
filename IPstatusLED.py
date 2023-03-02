@@ -4,7 +4,7 @@ from time import sleep
 from eventLog import logging
 ### ip addresses - GLOBAL
 WAN = '1.1.1.1'
-LAN = '10.0.0.1'
+LAN = '8.8.8.8' ### Change to default gateway ip addr
 
 ### GPIO Pin Numbers - GLOBAL
 BLUE = LED(11)

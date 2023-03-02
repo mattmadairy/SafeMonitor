@@ -1,6 +1,7 @@
-###Logging module
+### Logging module
 from time import ctime
 from datetime import date
+
 
 def logging(event):
     fileName = ('/home/pi/Documents/SafeMonitor/logfiles/'
