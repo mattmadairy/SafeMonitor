@@ -4,7 +4,7 @@ from datetime import date
 
 
 def logging(event):
-    fileName = ('/home/pi/Documents/SafeMonitor/logfiles/'
+    fileName = ('/home/pi/SafeMonitor/logfiles/'
     + str(date.today()) + '_logfile.txt')
     
     f = open(fileName, 'a')
