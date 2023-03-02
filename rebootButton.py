@@ -7,6 +7,7 @@ from pushNotification import pushOver
 rebootMes = 'SafeMonitor manually rebooted'
 event = 'REBOOT CALLED- EXTERNAL RESET BUTTON'
 blue = LED(12)
+green = LED(23)
 
 def reboot():   
     logging(event)
