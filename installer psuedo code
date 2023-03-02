@@ -1,8 +1,16 @@
-from subprocess import check_call as term
+#from subprocess import check_call as term
 
-repository = 'https://github.com/mattmadairy/SafeMonitor.git'
+#repository = 'https://github.com/mattmadairy/SafeMonitor.git'
 
-def createDir():
-    term(['sudo mkdir SafeMonitor'])
-    term(['cd SafeMonitor'])
-    term(['git clone', repository])
+#def createDir():
+ #   term(['sudo mkdir SafeMonitor'])
+  #  term(['cd SafeMonitor'])
+   # term(['git clone', repository])
+
+sudo mkdir SafeMonitor
+cd SafeMonitor
+git config user.name "Matthew Madairy"
+git config user.email "mattmadairy@email.com"
+git config --add safe.directory /home/pi/SafeMonitor
+git config pull.rebase false
+git clone https://github.com/mattmadairy/SafeMonitor.git

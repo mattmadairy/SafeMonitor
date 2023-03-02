@@ -2,5 +2,5 @@
 
 pkill doorStatus.py
 pkill IPstatusLED.py
-pkill reebootButton.py
+pkill rebootButton.py
 python3 off.py
