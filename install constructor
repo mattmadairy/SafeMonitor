@@ -1,0 +1,8 @@
+import requests
+
+url = 'https://raw.githubusercontent.com/mattmadairy/SafeMonitor/main/Installer%20script'
+resp = requests.get(url)
+with open("SafeMonitorInstaller.sh", "w") as f:
+    f.write(resp.text)
+    f.close
+
