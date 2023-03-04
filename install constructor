@@ -9,4 +9,4 @@ with open("SafeMonitorInstaller.sh", "w") as f:  ### write script to file
 
 os.system('sudo chmod +x /home/pi/Downloads/SafeMonitorInstaller.sh') ### make script executable
 
-os.system('/home/pi/Downloads/SafemonitorInstaller.sh') ### execute script 
+os.system('/home/pi/Downloads/SafeMonitorInstaller.sh') ### execute script 
