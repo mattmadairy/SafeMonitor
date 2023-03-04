@@ -1,10 +1,12 @@
 import requests
 import os 
 
-url = 'https://raw.githubusercontent.com/mattmadairy/SafeMonitor/main/Installer%20script'
+url = 'https://raw.githubusercontent.com/mattmadairy/SafeMonitor/main/Installer%20script' ### pull script from GitHub
 resp = requests.get(url)
-with open("SafeMonitorInstaller.sh", "w") as f:
+with open("SafeMonitorInstaller.sh", "w") as f:  ### write script to file
     f.write(resp.text)
     f.close
 
-os.system('sudo chmod +x /home/pi/Downloads/SafeMonitorInstaller.sh')
+os.system('sudo chmod +x /home/pi/Downloads/SafeMonitorInstaller.sh') ### make script executable
+
+os.system('/home/pi/Downloads/SafemonitorInstaller.sh') ### execute script
